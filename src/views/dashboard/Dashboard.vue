@@ -1,34 +1,35 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/admin/products">產品列表</router-link> |
-      <router-link to="/admin/coupons">優惠券列表</router-link> |
-      <router-link to="/admin/orders">訂單列表</router-link> |
-      <router-link to="/admin/images">圖片儲存列表</router-link>
-    </div>
+  <div id="app" class="container">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <a class="navbar-brand" href="#/admin">後台管理頁面</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <router-link to="/admin/products" class="nav-link">產品列表</router-link>
+          </li>
+          <li class="nav-item">
+              <router-link to="/admin/coupons" class="nav-link">優惠券列表</router-link>
+          </li>
+          <li class="nav-item">
+              <router-link to="/admin/orders" class="nav-link">訂單列表</router-link>
+          </li>
+          <li class="nav-item">
+              <router-link to="/admin/images" class="nav-link">圖片儲存列表</router-link>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <router-view/>
   </div>
 </template>
-
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-</style>
