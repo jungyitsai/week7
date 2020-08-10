@@ -1,7 +1,7 @@
 <template>
   <div>
     <loading :active.sync="isLoading"></loading>
-    <div class="card mt-3" v-if="!isLoading">
+    <div class="card mt-3 mb-3" v-if="!isLoading">
       <img class="card-img-top" :src="product.imageUrl[0]" alt="Card image cap" />
       <div class="card-body">
         <span class="badge badge-secondary float-right mt-2">{{ product.category }}</span>

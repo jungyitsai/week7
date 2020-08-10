@@ -1,5 +1,5 @@
 <template>
-  <div class="row mt-4">
+  <div class="row mt-4 mb-4">
     <loading :active.sync="isLoading"></loading>
     <div class="col-md-4 mt-3" v-for="item in products" :key="item.id">
       <div class="card">
