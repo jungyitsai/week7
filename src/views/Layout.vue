@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="container">
     <nav class="navbar navbar-expand-md navbar-light bg-light">
-      <a class="navbar-brand" href="#">購買明信片專區</a>
+      <a class="navbar-brand" href="#/home">購買明信片專區</a>
       <button
         class="navbar-toggler"
         type="button"
