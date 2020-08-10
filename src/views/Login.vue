@@ -76,8 +76,8 @@ export default {
           this.is_auth_success = true;
           this.auth_state = '成功登入';
 
-          // redirect to product page
-          this.$router.push('/admin/products');
+          // redirect to admin page
+          this.$router.push('/admin');
         })
         .catch((err) => {
           console.log(err);
