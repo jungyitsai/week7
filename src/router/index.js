@@ -5,40 +5,6 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/',
-    component: () => import('../views/Layout.vue'),
-    children: [
-      {
-        path: 'home',
-        component: () => import('../views/Home.vue'),
-      },
-      {
-        path: 'products',
-        component: () => import('../views/Products.vue'),
-      },
-      {
-        path: 'product/:id',
-        component: () => import('../views/Product.vue'),
-      },
-      {
-        path: 'cart',
-        component: () => import('../views/Cart.vue'),
-      },
-      {
-        path: 'about',
-        component: () => import('../views/About.vue'),
-      },
-      {
-        path: 'payment',
-        component: () => import('../views/Payment.vue'),
-      },
-      {
-        path: 'payment_success',
-        component: () => import('../views/PaymentSuccess.vue'),
-      },
-    ],
-  },
-  {
     path: '/login',
     component: () => import('../views/Login.vue'),
   },
